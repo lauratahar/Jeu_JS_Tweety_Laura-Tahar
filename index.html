@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Game</title>
+  </head>
+  <body>
+    <section id="game">
+      <div id="enemies"></div>
+
+      <div id="ground"></div>
+
+      <div id="player"></div>
+
+      <div id="popup">Game Over
+        <button class="button" onclick="document.location.reload(false)">PLAY AGAIN</button>
+      </div>
+      
+      <audio controls id="myaudio" controls="false">
+        <source src="audio/pacmanaudio.mp3" type="audio/mpeg">
+        <p>Votre navigateur ne prend pas en charge l'audio HTML. Voici un
+           un <a href="https://www.youtube.com/watch?v=v2a5yMUmcp0">lien vers le fichier audio</a> pour le 
+           télécharger.</p>
+      </audio>
+      
+
+      <div id="btn-container">
+        <button id="boutonstart" onclick="start(); playAudio()">PLAY</button>
+      </div>
+      
+
+      
+    </section>
+    <script src="game.js"></script>
+  </body>
+</html>
